@@ -1,0 +1,34 @@
+import  java.util.Scanner;
+class Armstron{
+    
+public static void main(String args[]){
+Scanner sc =new Scanner(System.in);
+System.out.println("enter frist range");
+int low=sc.nextInt();
+System.out.println("enter last range");
+int high=sc.nextInt();
+int number;
+System.out.println("Armstrong number");
+for(number=low;number<high;++number)
+{
+int digits=0;
+int sum=0;
+int orginalNum=number;
+while(orginalNum !=0){
+orginalNum= orginalNum/10;
+++digits;
+}
+orginalNum=number;
+while(orginalNum!=0)
+{
+int remainder= orginalNum%10;
+sum+=Math.pow(remainder,digits);
+orginalNum= orginalNum/10;
+}
+if(sum==number)
+{
+System.out.println(number+" ");
+}
+}
+}
+}
