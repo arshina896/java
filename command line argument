@@ -1,0 +1,14 @@
+//Write a program to find the sum, difference, product, quotient and remainder of two numbers passed as command line argument
+class Sum{
+public static void main(String args[]){
+int a=Integer.parseInt(args[0]);
+int b=Integer.parseInt(args[1]);
+int c,d,r,q,p;
+c=a+b;
+d=a-b;
+r=a%b;
+q=a/b;
+p=a*b;
+System.out.println("sum="+c+"\ndifference="+d+"\nremainder="+r+"\nquotient="+q);
+}
+}
