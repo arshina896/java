@@ -1,0 +1,28 @@
+ 
+//Given the sides of a triangle, write a program to check whether the triangle is equilateral, isosceles or scalene and find its area. 
+
+Import java.util.Scanner;
+Class triangle{
+Public Static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+Systemen.out.println("enter the fst side of a triangle");
+Int f=sc.nextInt();
+Systemen.out.println(“enter the 2nd  side of a triangle”);
+Int s=sc.nextInt();
+
+Systemen.out.println(“enter the 3rd  side of a triangle”);
+Int t=sc.nextInt();
+If(f==s&&s==t)
+{
+System.out.println(“triangle is eduilator”);
+}
+Else if(s==t||f==s||f==t)
+{
+System.out.println(“triangle is isosceles”);
+}
+Else
+{
+System.out.println(“triangle is scalene”);
+}
+}
+}
