@@ -1,0 +1,19 @@
+
+//Write java program to display Fibonacci series up to a limit.import java.util.Scanner;
+class Fibonacci{
+public static void main(String  args[]){
+Scanner sc=new Scanner(System.in);
+int  n1, n2, n3, i,l;
+System.out.println("enter a limit");
+l=sc.nextInt();
+n1=-1;
+n2=1;
+for(i=0;i<l;i++)
+{
+n3=n1+n2;
+System.out.println(" "+n3);
+n1=n2;
+n2=n3;
+}
+}
+}
