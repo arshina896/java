@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class vowels{
+public static void main(String args[]){
+String  s[]=new String[20];
+int i,n;
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the size of the string");
+n=sc.nextInt();
+System.out.println("enter string");
+for(i=0;i<n;i++)
+s[i]=nextInt();
+for(i=0;i<n;i++)
+if((s[i]=="a")||(s[i]=="e")||(s[i]=="A")||(s[i]=="E")||(s[i]=="i")||(s[i]=="I")||(s[i]=="o")||(s[i]=="O"))
+{
+continue;
+}
+System.out.println(s[i]);
+}
+}
