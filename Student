@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class Student{
+String name;
+Int rollno;
+String course;
+Void show_details(){
+System.out.println(“name=”+name+”\nRollno=”+rollno+”\nCourse=”+course);
+Class mark extends Student{
+Int m1,m2,m3,m4;
+Int total,avg;
+Void total(){
+Tot=m1+m2+m3+m4;
+System.out.println(“total=”+total);
+Void avg(){
+Int a;
+Avg=total/4;
+System.out.println(“average”+avg);
+}
+}
