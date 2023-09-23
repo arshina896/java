@@ -1,0 +1,18 @@
+class Overloading{
+    void Volume(int a){
+        int c=a*a*a;
+        System.out.println("the volume of cube="+c);
+        
+    }
+    void Volume(int a,int b){
+        int pi=3.14;
+        int v=pi*(a*a)*b,
+        System.out.println("the volume of cylinder"+v);
+        
+    }
+    void Volume(int a ,int b,int c){
+        v=a*b*c;
+        System.out.println("the volume of rectangular"+v);
+          
+    }
+}
