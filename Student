@@ -1,19 +1,57 @@
 import java.util.Scanner;
 class Student{
 String name;
-Int rollno;
 String course;
-Void show_details(){
-System.out.println(“name=”+name+”\nRollno=”+rollno+”\nCourse=”+course);
-Class mark extends Student{
-Int m1,m2,m3,m4;
-Int total,avg;
-Void total(){
-Tot=m1+m2+m3+m4;
-System.out.println(“total=”+total);
-Void avg(){
-Int a;
-Avg=total/4;
-System.out.println(“average”+avg);
+int rollno;
+void get(){
+Scanner sc=new Scanner (System.in);
+System.out.println("enter a name");
+name=sc.nextLine();
+System.out.println("enter course");
+course=sc.nextLine();
+System.out.println("enter the rollno");
+rollno=sc.nextInt();
+
 }
+void desplay(){
+System.out.println("name="+name);
+System.out.println("rollno="+rollno);
+System.out.println("course="+course);
+}
+}
+class Mark extends Student{
+Scanner sc=new Scanner (System.in);
+int m1;
+int m2;
+int m3;
+int m4;
+int total;
+float avg;
+void getMark(){
+System.out.println("enter 4 mark");
+m1=sc.nextInt();
+m2=sc.nextInt();
+m3=sc.nextInt();
+m4=sc.nextInt();
+}
+void desplaym(){
+System.out.println(" "+m1+" "+m2+" "+m3+" "+m4);
+total=m1+m2+m3+m4;
+System.out.println("total="+total);
+avg=total/4;
+System.out.println("avarage="+avg);
+if(avg>=35)
+System.out.println("pass");
+else
+System.out.println("fail");
+}
+}
+class Simplem{
+
+public static void main(String args[]){
+Mark ab=new Mark();
+ab.get();
+ab.desplay();
+ab.getMark();
+ab.desplaym();
 }
