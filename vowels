@@ -1,19 +1,24 @@
 import java.util.Scanner;
-class vowels{
+class Vowels{
 public static void main(String args[]){
-String  s[]=new String[20];
+String s;
 int i,n;
 Scanner sc=new Scanner(System.in);
-System.out.println("enter the size of the string");
-n=sc.nextInt();
+
 System.out.println("enter string");
-for(i=0;i<n;i++)
-s[i]=nextInt();
-for(i=0;i<n;i++)
-if((s[i]=="a")||(s[i]=="e")||(s[i]=="A")||(s[i]=="E")||(s[i]=="i")||(s[i]=="I")||(s[i]=="o")||(s[i]=="O"))
+s=sc.nextLine();
+for(i=0;i<s.length();i++)
 {
+if (s.charAt(i) == 'a' || s.charAt(i) == 'e'
+|| s.charAt(i) == 'i' || s.charAt(i) == 'o'
+|| s.charAt(i) == 'u' || s.charAt(i) == 'A'
+|| s.charAt(i) == 'E' || s.charAt(i) == 'I'
+|| s.charAt(i) == 'O' || s.charAt(i) == 'U')
+         {
+
 continue;
 }
-System.out.println(s[i]);
+System.out.println(s.charAt(i));
+}
 }
 }
